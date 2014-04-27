@@ -20,6 +20,9 @@ $(function(){
     // initialize the soundcloud app
     SC.initialize({
         client_id: client_id
+		SC.get("/tracks", , function(tracks) {
+			console.log(tracks[0]);
+		})
     });
 
     // on page load, start with a single song
